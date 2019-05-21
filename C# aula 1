@@ -1,0 +1,80 @@
+Exercicio 1
+{
+
+        int x;
+        int y;
+
+        
+            Console.WriteLine("Digite um numero");
+            x = Convert.ToInt32(Console.ReadLine());
+
+            do
+            {
+                Console.WriteLine("Digite um numero");
+                y = Convert.ToInt32(Console.ReadLine());
+
+            }
+            while (y < x);
+
+            for (int i = x+1 ; i < y; i++)
+            {
+                Console.WriteLine(i);
+                    
+                  
+            }
+
+
+            Console.ReadLine();
+
+            
+        
+        }
+------------
+Exercicio 2
+{
+	Console.WriteLine("Digite seu peso");
+            double peso = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Digite sua altura");
+            double altura =  Convert.ToDouble(Console.ReadLine());
+            
+
+            double imc;
+            imc = peso / (altura * altura);
+
+            if (imc < 17)
+            {
+                Console.WriteLine("Muito abaixo do peso");
+            }
+
+            else if (imc <= 18.49)
+            {
+                Console.WriteLine("abaixo do peso");
+            }
+
+            else if (imc <= 24.99)
+            {
+                Console.WriteLine("peso normal");
+            }
+
+            else if (imc <= 29.99) 
+            {
+                Console.WriteLine("acima do peso");
+            }
+
+            else if (imc <= 34.99) 
+            {
+                Console.WriteLine("obesidade I");
+            }
+
+            else if (imc <= 39.99)
+            {
+                Console.WriteLine("obesidade II (severa)");
+            }
+
+            else if (imc <= 40) 
+            {
+                Console.WriteLine("obesidade III (mórbida)");
+            }
+            Console.ReadLine();
+            }
