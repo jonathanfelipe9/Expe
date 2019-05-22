@@ -1,0 +1,75 @@
+EXE 1 -
+	{
+for (int numero = 1; numero <= 10; numero++)
+                for (int contador = 1; contador <= 10; contador++)
+                {
+                    int multiplicacao = numero * contador;
+                    Console.WriteLine(numero + " X " + contador + "=" + multiplicacao);
+                }
+            Console.ReadLine();  
+		}
+--------------
+EXE 2 - 
+{
+            int x0 = LerNumeroInteiro();
+                int x1 = LerNumeroInteiro();
+                int x2 = LerNumeroInteiro();
+                int x3 = LerNumeroInteiro();
+                int x4 = LerNumeroInteiro();
+
+
+                string s = Console.ReadLine();
+
+                Console.ReadLine();
+
+            }
+
+            static int LerNumeroInteiro()
+        {
+                Console.WriteLine("Digite um numero");
+                int numero = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(numero);
+            return numero;
+        }
+
+--------
+EXE 3 -
+{ 
+	int x0 = LerNumeroInteiro();
+            int x1 = LerNumeroInteiro();
+            int x2 = LerNumeroInteiro();
+
+            if (x0 > (x1 + x2))
+            { Console.WriteLine("O primeiro numero digitado e maior que a soma dos outros digitados");
+            }
+            if (x0 < (x1 + x2))
+            { Console.WriteLine("O primeiro numero digitado nao e maior que a soma dos outros digitados");
+            }
+            if (x0 == (x1 + x2))
+            { Console.WriteLine("O primeiro numero digitado e igual que a soma dos outros digitados");
+            }
+        }
+
+        static int LerNumeroInteiro()
+        {
+            Console.WriteLine("Digite um numero");
+            int numero = Convert.ToInt32(Console.ReadLine());
+            return numero;
+}
+
+----
+EXE 10-
+
+define compra
+define valor pago
+ 
+ faz if do troco
+ faz um vetor com as notas e moedas
+ faz percorrer o vetor com o foreach(double atual in dinheiro)
+ {
+ double quantidade = troco /atual;
+ int quantidadeInteira = (int) quantidade;
+ if (quantidadeInteira > 0)
+ {
+ Console.Writeline(quantidadeInteira+"-"+atual);      //tem que converter a quantidade pra quest//
+ troco
