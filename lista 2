@@ -56,7 +56,36 @@ EXE 3 -
             int numero = Convert.ToInt32(Console.ReadLine());
             return numero;
 }
+------
+EXE 5 - 
+{
+            int x0 = LerNumeroInteiro();
+            int x1 = LerNumeroInteiro();
 
+
+            float soma = (x0 + x1);
+
+            {
+                Console.WriteLine("A soma dos numeros digitados é:  " + soma );
+            }
+            float produto = (x0 * x1); 
+            {
+                Console.WriteLine("O produto dos numeros digitados é:  " + produto);
+            }
+            float quociente = (x0 / x1);
+            {
+                Console.WriteLine("O dos numeros digitados é:  " + quociente);
+            }
+        }
+
+        static int LerNumeroInteiro()
+        {
+            Console.WriteLine("Digite um numero");
+            int numero = Convert.ToInt32(Console.ReadLine());
+            return numero;
+        }
+	
+	
 ----
 EXE 10-
 
