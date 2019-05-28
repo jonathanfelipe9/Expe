@@ -1,0 +1,9 @@
+string Nome = txtNome.Text;
+            string Senha = txtSenha.Text;
+            if (Nome == "admin" && Senha == "admin")
+            {
+                labelStatus.Text = ("correto");
+            }
+            else
+            {
+                labelStatus.Text = ("incorreto");
