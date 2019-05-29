@@ -1,0 +1,27 @@
+{
+            Double n1 = Convert.ToInt32(txtNumero1.Text);
+            Double n2 = Convert.ToInt32(txtNumero2.Text);
+            int operacaoEscolhida = escolhaOperacao.SelectedIndex;
+            Double resultado = 0;
+
+            switch(operacaoEscolhida)
+
+            {
+                case 0:
+                    resultado = n1 + n2;
+                    break;
+
+                case 1:
+                    resultado = n1 - n2;
+                    break;
+                case 3:
+                    resultado = n1 * n2;
+                    break;
+                case 4:
+                    resultado = n1 / n2;
+                    break;
+            }
+            resultadoFinal.Text = Convert.ToString(resultado);
+
+
+        }
